@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+        </script>
+        <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    <style>
+        body{
+            background-color: #ff8533;
+        }
+        p{
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: justify;
+        }
+        ul{
+            padding-left: 65px;
+        }
+    </style>
+</head>
+
+<body>
+<div style="background-color :white; width: 80%; margin-top: 60px; margin-bottom: 20px; margin-left: 140px;padding-top: 15px; padding-bottom: 15px;">
+    <h1 style="padding-left: 40px;"> F4 <i>Solving Quadratic Equations </i><span style="padding-left: 280px;">Introduction</span></h1>
+    <hr>
+
+    <p style="font-weight: bold; font-size: 20px;"><i>Learning objectives</i></p>
+    <p>This unit is focused on methods of solving quadratic equations. After completing Unit F4 you should</p>
+    <ul>
+        <li>be able to solve quadratic equations that factories into two linear terms</li><br>
+        <li>be able to use the formula for solving quadratic equations</li><br>
+        <li>understand how to complete the square for a quadratic and hence solve the equation</li><br>
+    </ul><br>
+
+    <p style="font-weight: bold; font-size: 20px;"><i>Introduction</i></p>
+    <p>We can tell from Old Babylonian clay tablets dating from around 2000 BC that the Babylonians knew how to solve a pair of simultaneous equations of the form</p>
+
+    <p style="text-align: center; font-size: 20px;">$x + y = p, xy = q$</p>
+
+    <p>which is equivalent to the equation</p>
+    <p style="text-align: center; font-size: 20px;">$x^2 + q = px$</p>
+
+    <p>In the 8th Century BC, quadratic equations of the form $ax^2 = c$ and $ax^2 + bx = c$ were explored in
+    ancient India, using geometric methods. Babylonian mathematicians from circa 400 BC and Chinese
+    mathematicians from circa 200 BC used the method of completing the square (see <i>Section F4.3</i>) to 
+    solve quadratic equations with positive roots, but did not have a general formula.</p>
+
+    <p>In 628 AD, Brahmagupta, an Indian mathematician, gave the first explicit solution of the quadratic equation but it was not until 1896 that the first reference to the general solution</p>
+    <p style="text-align: center; font-size: 20px; padding-left: 250px;">$ax^2 + bx + c = 0$ <span style="font-size: 15px;padding-left: 30px;">($a, b, c$ are constants, $a \ne 0$)</span></p>
+
+    <p style= "padding-left: 260px;"> as <span style="font-size: 20px;padding-left: 150px;text-align: center;">$x = \frac {-b \pm \sqrt {b^2-4ac}}{2a}$</span></p>
+    <p>was published by Henry Heaton in The American Mathematical Monthly (see information at</p>
+    <p style="text-align: center;"><a href="http://en.wikipedia.org/wiki/Quadratic_equation">http://en.wikipedia.org/wiki/Quadratic_equation</a></p>
+    <p style="text-align: center;">and <a href="http://www.jstor.org/stable/2971099?seq=1">http://www.jstor.org/stable/2971099?seq=1</a>)</p>
+
+    <p style="font-weight: bold; font-size: 20px;"><i>Key points and principles</i></p>
+    <ul>
+        <li>There are three methods of solving quadratic equations:</li><br>
+        <ol type="i">
+            <li style="padding-left: 50px;">quadratic factorisation, where we can write</li>
+            <p style=" padding-left: 150px;">$ax^2 + bx + c = a(x - p)(x - q)$ when $p$ and $q$ are rational numbers which solution $x = p$ or $x = q$</p>
+
+            <li style="padding-left: 50px;">formula <span style="font-size: 20px; padding-left: 45px;">$x = \frac {-b \pm \sqrt {b^2-4ac}}{2a}$</span></li><br>
+            <li style="padding-left: 50px;">Completing the square, where we write</li><br>
+            <span style="font-size: 20px; padding-left: 150px;">$ax^2 + bx + c = a({x} + \frac {b}{2a})^2 - \frac {b^2}{4a} + c$</span><br><br>
+        </ol><br>
+        <li>Note that if $(x - a)(x - b) = 0$, then either $x -a = 0$ or $x - b = 0$, giving $x = a$ or $x = b$.</li><br>
+        <li>Quadratic equations have 2, 1 or 0 real roots according to the value of "$b^2 - 4ac $": </li><br>
+        <ol type="i">
+            <li style="padding-left: 50px;">If $b^2 > 4ac$, there are 2 real distinct roots</li><br>
+            <li style="padding-left: 50px;">If $b^2 = 4ac$, there is 1 (repeated) real root</li><br>
+            <li style="padding-left: 50px;">If $b^2 < 4ac$, there are no real roots.</li><br>
+        </ol>
+    </ul>
+
+    <p style="font-weight: bold; font-size: 20px;"><i>Facts to remember</i></p>
+    <ul>
+        <li>If $(x - a)(x - b) = 0$ then $x = a$ or $x = b$</li><br>
+        <li>The formula for solving the quadratic equation</li>
+        <p style="font-size: 20px; text-align: center;">$ax^2 + bx + c = 0$</p>
+        <p style="padding-left: 270px;">is</p>
+        <p style="font-size: 20px; text-align: center;">$x = \frac {-b \pm \sqrt {b^2-4ac}}{2a}$</p>
+        <li>The number of real roots of a quadratic is</li>
+        <p style="font-size: 20px; text-align: center;">2 if $b^2 > 4ac$</p>
+        <p style="font-size: 20px; text-align: center;">1 if $b^2 = 4ac$</p>
+        <p style="font-size: 20px; text-align: center;">0 if $b^2 < 4ac$</p>
+    </ul>
+
+    <p style="font-weight: bold; font-size: 20px;"><i>Glossary of Terms</i></p>
+    <p><i style="font-weight: bold;">Quadratic factorisation</i> <span style="padding-left: 145px;">This is when your can write a quadratic formula in the form</span></p>
+    <p style="font-size: 20px; text-align: center;">$ax^2 + bx + c = a(x - p)(x - q)$</p><br>
+
+    <p><i style="font-weight: bold;">Formula for solving quadratic equation</i> <span style="padding-left: 40px;">The formula for solving the quadratic equation</span></p>
+    <p style="font-size: 20px; text-align: center;">$ax^2 + bx + c = 0$</p>
+    <p style="padding-left: 350px;">is</p>
+    <p style="font-size: 20px; text-align: center;">$x = \frac {-b \pm \sqrt {b^2-4ac}}{2a}$</p>
+
+    <p ><i style="font-weight: bold;">Completing the square</i> <span style="padding-left: 150px;">This is when we write the quadratic in the form</span></p>
+    <p style="font-size: 20px; text-align: center;">$ax^2 + bx + c = a(x + \frac {b}{2a})^2 - \frac{b^2}{4a} + c$</p>
+</div>
+</body>
+</html>
